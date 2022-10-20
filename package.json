@@ -1,17 +1,13 @@
 {
   "name": "@casual-ui/types",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The shared types of casual-ui",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc -p ./tsconfig.json"
   },
   "files": ["dist"],
-  "publishConfig": {
-    "types": "./dist/index.d.ts",
-    "exports": {
-      ".": "./dist/index.js"
-    }
-  },
+  "main": "./dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Blackman99/casual-ui.git",
