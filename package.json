@@ -1,10 +1,11 @@
 {
   "name": "@casual-ui/types",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "The shared types of casual-ui",
   "scripts": {
     "build": "tsc -p ./tsconfig.json"
   },
+  "files": ["dist"],
   "publishConfig": {
     "types": "./dist/index.d.ts",
     "exports": {
