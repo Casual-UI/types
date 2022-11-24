@@ -38,16 +38,7 @@ interface Notification {
  * The position composition enum.
  * @zh 位置组合，格式为：'横轴位置 纵轴位置'
  */
-type PositionGroup =
-  | 'start start'
-  | 'start center'
-  | 'start end'
-  | 'center start'
-  | 'center center'
-  | 'center end'
-  | 'end start'
-  | 'end center'
-  | 'end end'
+type PositionGroup = `${CPosition} ${CPosition}`
 
 type NotificationGroups = {
   [key in PositionGroup]: {
