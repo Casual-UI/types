@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react'
+
 /**
  * The themes of Casual UI
  */
@@ -9,9 +11,19 @@ type CTheme = 'primary' | 'secondary' | 'negative' | 'warning'
 type CSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 
 /**
+ * CSS units
+ */
+type CUnit = 'px' | 'rem' | 'em' | 'pt' | '%' | 'vw' | 'vh'
+
+/**
+ * CSS Length
+ */
+type CLength = `${number}${CUnit}`
+
+/**
  * Slot props used for React
  */
-type CSlot = JSX.Element | string | JSX.Element[]
+type CSlot = ReactNode
 
 /**
  * Position types, use the flex-start, center, flex-end css values
@@ -22,6 +34,10 @@ type CPosition = 'start' | 'center' | 'end'
  * Form validation function type
  */
 type CRule = (v: any) => string | false | Promise<string | false>
+
+type CTextAlign = 'left' | 'center' | 'right'
+
+type CFlexDirection = 'row' | 'column' | 'row-reverse' | 'column-reverse'
 
 interface Notification {
   title?: string
@@ -119,6 +135,10 @@ interface EmitModel<T> {
 type CLabelDirection = 'row' | 'row-reverse' | 'column' | 'column-reverse'
 
 export type {
+  CTextAlign,
+  CFlexDirection,
+  CLength,
+  CUnit,
   CRule,
   CLabelDirection,
   CSlot,
