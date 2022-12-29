@@ -1,5 +1,3 @@
-import type { ReactNode } from 'react'
-
 /**
  * The themes of Casual UI
  */
@@ -19,11 +17,6 @@ type CUnit = 'px' | 'rem' | 'em' | 'pt' | '%' | 'vw' | 'vh'
  * CSS Length
  */
 type CLength = `${number}${CUnit}`
-
-/**
- * Slot props used for React
- */
-type CSlot = ReactNode
 
 /**
  * Position types, use the flex-start, center, flex-end css values
@@ -141,7 +134,6 @@ export type {
   CUnit,
   CRule,
   CLabelDirection,
-  CSlot,
   CTheme,
   CSize,
   CPosition,
