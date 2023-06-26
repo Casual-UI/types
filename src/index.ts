@@ -127,6 +127,10 @@ interface EmitModel<T> {
  */
 type CLabelDirection = 'row' | 'row-reverse' | 'column' | 'column-reverse'
 
+/**
+ * The tooltip position.
+ * @zh 工具提示的弹出位置
+ */
 type CTooltipPosition = `${'top' | 'right' | 'bottom' | 'left'}${`-${'start' | 'end'}` | ''}`
 
 export type {
