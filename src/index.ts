@@ -127,7 +127,10 @@ interface EmitModel<T> {
  */
 type CLabelDirection = 'row' | 'row-reverse' | 'column' | 'column-reverse'
 
+type CTooltipPosition = `${'top' | 'right' | 'bottom' | 'left'}${`-${'start' | 'end'}` | ''}`
+
 export type {
+  CTooltipPosition,
   CTextAlign,
   CFlexDirection,
   CLength,
